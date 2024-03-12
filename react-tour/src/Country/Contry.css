@@ -12,3 +12,6 @@
     margin: 0 auto 15px auto;
     object-fit: cover;
 }
+.visited{
+    background-color: gray;
+}

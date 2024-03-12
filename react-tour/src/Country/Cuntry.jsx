@@ -9,7 +9,7 @@ const Cuntry = ({country}) => {
         setVisited(!visited);
     }
     return (
-        <div className='country'>
+        <div className={`country ${visited ? 'visited' : ''}`}>
             <img src={flags.png} alt="" className='flags' />
             <h3>Name:{name.common}</h3>
             <button onClick={visitedHandeler}>{visited && 'visited' || 'visite'}</button>
