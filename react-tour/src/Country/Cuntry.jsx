@@ -9,15 +9,15 @@ const Cuntry = ({country, handlevisitedCountires}) => {
         setVisited(!visited);
     }
     // console.log(handlevisitedCountires);
-    function passWithParam () {
-        handlevisitedCountires(country);
-    }
+    // function passWithParam () {
+    //     handlevisitedCountires(country);
+    // }
     return (
         <div className={`country ${visited ? 'visited' : ''}`}>
             <img src={flags.png} alt="" className='flags' />
             <h3>Name:{name.common}</h3>
             <button onClick={visitedHandeler}>{visited && 'visited' || 'visite'}</button>
-            <button onClick={passWithParam}>set as visited</button>
+            <button onClick={()=>{handlevisitedCountires(country)}}>set as visited</button>
         </div>
     );
 };
