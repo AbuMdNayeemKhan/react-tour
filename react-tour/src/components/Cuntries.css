@@ -7,3 +7,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+
+ul{
+    display: flex;
+    gap: 15px;
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.flag-container img{
+    width: 100px;
+}
